@@ -52,7 +52,7 @@
                 <!-- register section starts -->
                 <section class="row flexbox-container">
                     <div class="col-xl-8 col-10">
-                        <div class="card bg-authentication mb-0">
+                        <div class="card bg-authentication mb-0" style=" background-color: #21254a;">
                             <div class="row m-0">
                                 <!-- register section left -->
                                 <div class="col-md-6 col-12 px-0">
@@ -105,7 +105,7 @@
                                 </div>
                                 <!-- image section right -->
                                 <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
-                                    <img class="img-fluid" src="/img/pages/register.png" alt="branding logo">
+                                    <img class="img-fluid" src="/img/login.jpg" alt="branding logo">
                                 </div>
                             </div>
                         </div>
