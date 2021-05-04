@@ -111,7 +111,7 @@
                                 <!-- right section image -->
                                 <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="/img/login.png" alt="branding logo">
+                                        <img class="img-fluid" src="/img/logo/login.jpg" alt="branding logo">
                                     </div>
                                 </div>
                             </div>

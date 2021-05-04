@@ -4,7 +4,7 @@
                 <li class="nav-item mr-auto">
                     <a class="navbar-brand" href="/">
                         <div class="brand-logo"></div>
-                        <h2 class="brand-text mb-0" style="color: rgb({{auth()->user()->style_menu->style}}) !important;">{{ config('app.name', 'Laravel') }}</h2>
+                        <h2 class="brand-text mb-0" style="color: rgb({{auth()->user()->style_menu->style}}) !important;">{{ config('app.name') }}</h2>
                     </a>
                 </li>
                 <li class="nav-item nav-toggle">
