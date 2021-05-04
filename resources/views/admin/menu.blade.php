@@ -37,8 +37,10 @@
                 </li>
                 <!-- recorremos la lista de menu existente -->
                 <?php  
-                    $ruta = explode("/", Request::path());
-                    $path = $ruta[0];
+                       $ruta = explode("/", Request::path());
+                       $ruta2 = explode("\/", Request::path());
+                       $path = $ruta[0];
+                       $path2 = $ruta2[0];
                 ?>
                 @foreach(user_menu() as $menu)
                     <li class="nav-item has-sub">
@@ -49,10 +51,10 @@
                         <ul class="menu-content">
                             @foreach(user_submenu() as $submenu)
                                 @if($submenu->id_menu == $menu->id_menu)
-                                    <li class="@if($path == $submenu->url || $ruta == $submenu->url) active @endif" @if($path == $submenu->url) style="background: rgba({{auth()->user()->style_menu->style}}, 0.2); border-color: rgb({{auth()->user()->style_menu->style}});" @endif>
-                                        <a href="/{{ $submenu->url }}" @if($path == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}});" @endif>
-                                            <i class="{{ $submenu->icon }}" @if($path == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}});" @endif></i>
-                                            <span class="menu-item" data-i18n="Grid" @if($path == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}}) !important;" @endif>
+                                    <li class="@if($path == $submenu->url || $path2 == $submenu->url) active @endif" @if($path == $submenu->url || $path2 == $submenu->url) style="background: rgba({{auth()->user()->style_menu->style}}, 0.2); border-color: rgb({{auth()->user()->style_menu->style}});" @endif>
+                                        <a href="/{{ $submenu->url }}" @if($path == $submenu->url || $path2 == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}});" @endif>
+                                            <i class="{{ $submenu->icon }}" @if($path == $submenu->url || $path2 == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}});" @endif></i>
+                                            <span class="menu-item" data-i18n="Grid" @if($path == $submenu->url || $path2 == $submenu->url) style="color: rgb({{auth()->user()->style_menu->style}}) !important;" @endif>
                                                 {{ $submenu->title }}
                                             </span>
                                         </a>
