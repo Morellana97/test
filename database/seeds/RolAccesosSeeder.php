@@ -15,6 +15,7 @@ class RolAccesosSeeder extends Seeder
         DB::table('rol_accesos')->insert(['id_rol' => 1, 'id_submenu' => 1]);
         DB::table('rol_accesos')->insert(['id_rol' => 1, 'id_submenu' => 2]);
         DB::table('rol_accesos')->insert(['id_rol' => 1, 'id_submenu' => 3]);
+        DB::table('rol_accesos')->insert(['id_rol' => 1, 'id_submenu' => 4]);
        
     }
 }

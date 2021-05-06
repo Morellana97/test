@@ -26,6 +26,8 @@ class UserRequest extends FormRequest
             'email.string'     => 'Debe ingresar solo caracteres',
             'email.email'      => 'El formato del correo no es valido',
             'email.unique'     => 'El correo ya existe',
+
+            'password.required'     => 'Escribir contraseña',
         ];
     }
 
@@ -39,6 +41,7 @@ class UserRequest extends FormRequest
         return [
             'name'          => 'required|string|max:100',
             'email'         => 'required|string|email|unique:users,email',
+            'password'         => 'required|string',
         ];
     }
 }

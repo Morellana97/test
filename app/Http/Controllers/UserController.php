@@ -33,13 +33,13 @@ class UserController extends Controller
      */
     public function index()
     {
-        $data['users'] = User::paginate(6);
+        $data['users'] = User::paginate(1);
         return view('config.user.index',$data);
     }
 
     public function find(Request $request)
     {
-        $data['users'] = User::Search($request->search)->orderBy('created_at','DESC')->paginate(6);
+        $data['users'] = User::Search($request->search)->orderBy('created_at','DESC')->paginate(5);
         return view('config.user.index',$data);
     }
 
@@ -51,6 +51,7 @@ class UserController extends Controller
     public function create()
     {
         $data['roles'] = Rol::where('status',1)->pluck('title','id');
+        // return $data;
         return view('config.user.create',$data);
     }
 
@@ -123,10 +124,15 @@ class UserController extends Controller
      */
     public function edit(User $user)
     {
+
+        if( auth()->user()->id_rol ==1){
         $data['user']   = $user;
         $data['roles']  = Rol::where('status',1)->pluck('title','id');
         $data['lista']  = UserRol::where('id',$user->id)->pluck('id_rol');
         return view('config.user.edit',$data);
+        }else{
+            return "NO";
+        }
     }
 
     /**
@@ -141,6 +147,7 @@ class UserController extends Controller
         DB::beginTransaction();
  
         try {
+            
             $user->name     = $request->name;
             $user->email    = $request->email;
             $user->id_rol   = $request->rol;

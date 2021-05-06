@@ -54,19 +54,19 @@
 											<i class="bx bx-link-alt"></i>
 										</div>
 									</div>
-									@error('titulo')
+									@error('password')
                                        <p class="text-danger">{{ $message }}</p>
                                     @enderror
 								</div>
 								<div class="col-md-6 form-group">
 									<label for="rol">Rol Pricipal</label>
 									<div class="position-relative has-icon-left">
-										{!! Form::select('rol',$roles,3,['class'=>'form-control','id'=>'rol','id'=>'basicSelect']) !!}
+										{!! Form::select('rol',$roles,null,['class'=>'form-control','id'=>'rol','id'=>'basicSelect']) !!}
 										<div class="form-control-position">
 											<i class="bx bx-user-circle"></i>
 										</div>
 									</div>
-									@error('descripcion')
+									@error('rol')
                                        <p class="text-danger">{{ $message }}</p>
                                     @enderror
 								</div>

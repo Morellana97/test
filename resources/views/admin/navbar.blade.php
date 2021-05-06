@@ -258,7 +258,7 @@
                             <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
                                 <div class="user-nav d-sm-flex d-none">
                                     <span class="user-name">{{ auth()->user()->name }}</span>
-                                    <span class="user-status text-muted">{{ auth()->user()->rol->titulo }}</span>
+                                    <span class="user-status text-muted">{{ auth()->user()->rol->title }}</span>
                                 </div>
                                 <span>
                                     <img class="round" src="/img/avatar/{{auth()->user()->avatar}}" alt="avatar" height="40" width="40">

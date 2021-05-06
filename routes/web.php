@@ -75,4 +75,11 @@ Route::group(['middleware' => 'accesos'], function () {
 		Route::put('/update/{user}', 'UserController@update')->name('usuario.update');
 	});
 
+	///Periodo
+	Route::group(['prefix' => 'periodo'], function () {
+		Route::get('/', 'PeriodoController@index')->name('periodo');
+		Route::get('/find', 'PeriodoController@find')->name('periodo.find');
+		
+	});
+
 });
