@@ -16,9 +16,12 @@ Route::get('/', function () {
 	return redirect('/login');
 });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
 
 // 
 Route::get('/perfil', 'UserController@show')->name('usuario.perfil');
