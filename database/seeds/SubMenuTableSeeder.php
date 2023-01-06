@@ -44,15 +44,7 @@ class SubMenuTableSeeder extends Seeder
             'order'         => 4
         ]);
 
-        DB::table('sub_menu')->insert([
-            'id'            => 4,
-            'title'         => 'Periodo',
-            'description'   => 'Lista de periodos',
-            'url'           => "periodo",
-            'icon'          => "bx bx-user-circle",
-            'id_menu'       => 1,
-            'order'         => 4
-        ]);
+        
 
         
     }

@@ -12,13 +12,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
+            // \App\User::factory(10)->create(),
             StyleTableSeeder::class,
             StyleMenuTableSeeder::class,
             RolTableSeeder::class,
         	UserTableSeeder::class,
             MenuTableSeeder::class,
             SubMenuTableSeeder::class,
-            RolAccesosSeeder::class
+            RolAccesosSeeder::class,
         ]);
     }
 }

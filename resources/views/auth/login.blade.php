@@ -89,11 +89,7 @@
                                                                 </label>
                                                             </div> -->
                                                         </div>
-                                                        <div class="text-right">
-                                                            <a href="{{ route('password.request') }}" class="card-link">
-                                                                <small>Olvidaste tu contraseña?</small>
-                                                            </a>
-                                                        </div>
+                                                        
                                                     </div>
                                                     <button type="submit" class="btn btn-primary glow w-100 position-relative">Iniciar sesion<i id="icon-arrow" class="bx bx-right-arrow-alt"></i></button>
                                                 </form>
@@ -111,7 +107,7 @@
                                 <!-- right section image -->
                                 <div class="col-md-6 d-md-block d-none text-center align-self-center p-3">
                                     <div class="card-content">
-                                        <img class="img-fluid" src="/img/logo/login.jpg" alt="branding logo">
+                                        <img class="img-fluid" src="/img/pages/login.png" alt="branding logo">
                                     </div>
                                 </div>
                             </div>
