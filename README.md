@@ -17,7 +17,7 @@ componentes del sistema:
 
 ## instalacion del sistema
 
-Para instalar el sistema necesita copiar la url del proyecto -> https://gitlab.com/SanSalvador/base_laravel.git.
+Para instalar el sistema necesita copiar la url del proyecto -> https://github.com/Morellana97/test.git.
 
 - git clone https://gitlab.com/SanSalvador/base_laravel.git.
 - cp .env.example .env
