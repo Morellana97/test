@@ -36,6 +36,3 @@ Para instalar el sistema necesita copiar la url del proyecto -> https://github.c
 - FORM HTML LARAVEL -> composer require "laravelcollective/html":"^5.6.0"
 - DEBUGBAR -> composer require barryvdh/laravel-debugbar --dev
 
-## Grupo de trabajo
-
-- Steven Andrade, Luis Ernesto y Marlon Orellana
